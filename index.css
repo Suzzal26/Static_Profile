@@ -118,7 +118,7 @@ section h3 {
 
 /* Footer (Navbar) */
 .navbar {
-    position: sticky; /* Stick to bottom of the viewport */
+    position: sticky; 
     bottom: 0;
     background-color: #fffffff4; 
     display: flex;

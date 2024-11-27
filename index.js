@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carouselImages = document.querySelector('.carousel-images');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+    const carousels = document.querySelectorAll('.carousel');
 
-    let scrollAmount = 0;
+    carousels.forEach((carousel) => {
+        const carouselImages = carousel.querySelector('.carousel-images');
+        const prevBtn = carousel.querySelector('.prev-btn');
+        const nextBtn = carousel.querySelector('.next-btn');
 
-    nextBtn.addEventListener('click', () => {
-        carouselImages.scrollBy({ left: 200, behavior: 'smooth' });
-    });
+        nextBtn.addEventListener('click', () => {
+            carouselImages.scrollBy({ left: 200, behavior: 'smooth' });
+        });
 
-    prevBtn.addEventListener('click', () => {
-        carouselImages.scrollBy({ left: -200, behavior: 'smooth' });
+        prevBtn.addEventListener('click', () => {
+            carouselImages.scrollBy({ left: -200, behavior: 'smooth' });
+        });
     });
 });
