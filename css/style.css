@@ -1,0 +1,499 @@
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 40%, #f0fdfa 100%);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ===== Theme Variables ===== */
+:root {
+  --bg: #f0fdfa;
+  --bg-alt: #e0f2fe;
+  --card: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --primary: #38bdf8;
+  --accent: #a78bfa;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0 8px 28px rgba(0,0,0,0.1);
+  --radius: 1.25rem;
+  --container: 1100px;
+  --transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* ===== Containers ===== */
+.container {
+  width: 90%;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+/* ===== Navbar ===== */
+.site-header {
+  background: var(--card);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+.brand img {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.5rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ===== Hero ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-media {
+  flex: 1;
+}
+
+.hero-photo {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-copy h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.btn:hover {
+  background: var(--accent);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 4rem 0;
+}
+
+.section:nth-child(even) {
+  background: var(--bg-alt);
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+/* ===== Work Section ===== */
+.work-block {
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.work-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.work-head h3 {
+  font-size: 1.5rem;
+}
+
+.link-more {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* =============================
+   GRAPHIC DESIGN (Work Block 1)
+   ============================= */
+.work-block.graphic .grid.thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-block.graphic .thumb {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.work-block.graphic .thumb img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: transform 0.3s ease;
+}
+
+.work-block.graphic .thumb:hover img {
+  transform: scale(1.05);
+}
+
+/* =============================
+   STORIES & NOVELS (Work Block 2)
+   ============================= */
+.work-block.stories .stories-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.work-block.stories .stories-slider img {
+  flex: 0 0 auto;
+  height: 180px;
+  width: auto;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.work-block.stories .stories-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* =============================
+   WEB PROJECTS (Work Block 3)
+   ============================= */
+.work-block.web .web-project-card {
+  display: flex;
+  justify-content: flex-start;   /* left align */
+  align-items: center;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin-left: 0;
+  margin-right: auto;
+  transition: var(--transition);
+}
+
+.work-block.web .web-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.work-block.web .web-project-card img {
+  max-height: 120px;
+  width: auto;
+  margin-right: 1rem;
+  border-radius: 0.75rem;
+}
+
+/* ===== Timeline ===== */
+.timeline {
+  border-left: 3px solid var(--primary);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+.timeline-item {
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "●";
+  color: var(--primary);
+  position: absolute;
+  left: -1.1rem;
+  font-size: 1rem;
+}
+
+.timeline-title {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-sub {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+/* ===== Cards (Skills, Education, Certificates) ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== Contact Section ===== */
+.contact-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.social-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-row img {
+  width: 32px;
+  height: 32px;
+  transition: var(--transition);
+}
+
+.social-row img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--card);
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-inner {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--card);
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .work-block.stories .stories-slider img {
+    height: 140px;
+  }
+  .work-block.web .web-project-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* === Work Thumbnails Fix === */
+/* === Work Section Layout Fix === */
+.grid.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start; /* align items from the left */
+}
+
+/* Anchor should wrap only the image */
+.grid.thumbs .thumb {
+  display: inline-block;
+  flex: 0 0 auto;
+  max-width: 220px; /* consistent card width */
+}
+
+/* Make all images/cards uniform */
+.grid.thumbs .thumb img {
+  display: block;
+  width: 100%;
+  height: 180px; /* fixed height for consistency */
+  object-fit: cover; /* crop to fit nicely */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none; /* hidden by default */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background: #357ab8;
+  transform: translateY(-3px);
+}

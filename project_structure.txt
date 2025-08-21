@@ -1,0 +1,135 @@
+Folder PATH listing for volume OS
+Volume serial number is E42B-F3E4
+C:.
+|   CNAME
+|   index.html
+|   project_structure.txt
+|   
++---another_images
+|       Asuna-Dio.png
+|       Brochure.png
+|       Bulb.gif
+|       Burger.jpeg
+|       Car.jpg
+|       Detergent.png
+|       Dinner Coupon.jpg
+|       Ducati.jpeg
+|       facebook.png
+|       favi.png
+|       Flyer.jpg
+|       git.png
+|       Glow.png
+|       Infographics.png
+|       instagram.png
+|       JEWELLERY AD.jpg
+|       linkedin.png
+|       Magazine Cover.jpg
+|       mail.png
+|       Menu.jpg
+|       Newspaper.pdf
+|       Newspaper.png
+|       Phone.png
+|       portfolio.png
+|       port_pdf.jpg
+|       Poster.png
+|       Pulsar.jpg
+|       resume.png
+|       Reunion Nepali.jpg
+|       Reunion.png
+|       Shoes.jpg
+|       starlink.jpeg
+|       Sujal Ghimire Portfolio.pdf
+|       Suzzal_G_Resume.pdf
+|       Trifold Brochure.pdf
+|       Visiting Card.jpeg
+|       Washing machine ad.jpg
+|       
++---Banners Output
+|       Apricus.png
+|       Baba Biryani.png
+|       Biryani King.png
+|       Burger House and Crunchy Fried Chicken.png
+|       Burger House.png
+|       Cozy Cup.jpg
+|       Cravings.png
+|       Dammi Foods.png
+|       Derby's.png
+|       El Dorado.png
+|       Fresh Elements.png
+|       Hakku Choila.png
+|       mithokhanekura.png
+|       namaste c4.png
+|       Pizmo.png
+|       Porky Affair.png
+|       Raksi Sukuti.png
+|       Sekuwa Mandi.png
+|       
++---blog_images
+|       Fausse_Croyance 2.jpg
+|       Fausse_Croyance.png
+|       Gurdge.jpg
+|       Homeless.jpg
+|       I Forgot.jpg
+|       Just a Simple Man.jpg
+|       Narcissist.jpg
+|       New Session.jpg
+|       Perepichka.jpg
+|       Stare.jpg
+|       The Blooming Connection.jpg
+|       The Drive.jpg
+|       The Year Without Resolve.jpg
+|       This is who I am.jpg
+|       What If I was the one.jpg
+|       Who Stole It.jpg
+|       
++---css
+|       style.css
+|       
++---Emailers
+|       Jestha 12 Monday Motivation.png
+|       July 14.png
+|       June 23.png
+|       June 30.png
+|       
++---Features
+|       Biryani Adda and Tandoori.png
+|       Biryani King.png
+|       Burger House and Crunchy Fried Chicken.png
+|       Chef's Burger Feature.png
+|       Pop in Pizza_2.png
+|       Porky Affair.png
+|       The Bar Room.png
+|       Yasumi.png
+|       
++---Happy Hour
+|       Cravings.png
+|       Diyalo Foodland 1.png
+|       Diyalo Foodland 2.png
+|       Diyalo Foodland 4.png
+|       Diyalo Foodland.png
+|       US Pizza 1.png
+|       US Pizza.png
+|       Vitamin Cafe 1.png
+|       
++---js
+|       script.js
+|       
++---Novel
+|       Echoes of Dream.jpg
+|       
++---SNS Posts
+|       Another One.png
+|       Buddha Jayante.png
+|       HBJ 1.png
+|       HBJ 2.png
+|       Mother_Prot_Two.png
+|       Prototype.png
+|       static 2.png
+|       static.png
+|       
+\---sub categories
+        graphic-design.css
+        graphic-design.html
+        stories-novels.css
+        stories-novels.html
+        

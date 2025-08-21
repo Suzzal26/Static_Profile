@@ -1,178 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suzzal Ghimire Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="another_images/favi.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suzzal Ghimire — Portfolio</title>
+  <link rel="icon" href="another_images/favi.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Portfolio of Suzzal Ghimire — Graphic Designer, MERN Stack Developer, and Storywriter." />
 </head>
+<!-- Back to Top Button -->
+<button id="backToTop" aria-label="Back to top">↑</button>
+
 <body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="#home">
+        <img src="another_images/favi.png" alt="Logo" class="logo-icon" />
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">&#9776;</button>
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero" role="region" aria-label="Hero">
+    <div class="hero-inner container">
+      <div class="hero-media">
+        <img class="hero-photo" src="another_images/portfolio.png" alt="Portrait of Suzzal Ghimire" />
+      </div>
+      <div class="hero-copy">
+        <h1>Hi, I’m <span class="accent">Suzzal Ghimire</span></h1>
+        <p class="tagline">Graphic Designer | MERN Stack Developer | Storywriter</p>
+        <p class="intro">Designing visuals, building web experiences, and crafting narratives with clarity and creativity.</p>
+        <div class="cta-row">
+          <a class="btn" href="#work">View Works</a>
+          <a class="btn btn-outline" href="another_images/Suzzal_G_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section--about" aria-label="About Me">
     <div class="container">
-        
-        <aside class="sidebar">
-            <img src="another_images/portfolio.png" alt="Suzzal Ghimire" class="sidebar-image">
-        </aside>
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m Suzzal Ghimire, an aspiring Graphic Designer and MERN Stack Developer with professional training in tools such as Photoshop, Illustrator, and InDesign, along with hands-on experience in MongoDB, Express.js, React.js, and Node.js. Beyond design and development, I have a strong passion for storytelling and have spent years crafting reviews, blogs, scripts, and immersive narratives on platforms like Blogspot, Wattpad, and Honeyfeed.
+      </p>
+    </div>
+  </section>
 
-       
-        <main>
-            <header>
-                <h1>Suzzal Ghimire</h1>
-                <h2>Graphic Designer | Exploring MERN Stack</h2>
-            </header>
+ <!-- Work -->
+<section id="work" class="section section--work" aria-label="Work Previews">
+  <div class="container">
+    <h2 class="section-title">My Works</h2>
 
-            <section id="introduction">
-                <h3>Introduction</h3>
-                <p>I am Suzzal Ghimire, an aspiring graphic designer and MERN stack developer with professional training 
-                    in tools like Photoshop, Illustrator, and InDesign, as well as technologies like MongoDB, Express.js, 
-                    React.js, and Node.js. While I’m very confident in my graphic design skills, I’ll admit I’m still refining my 
-                    MERN stack expertise. Beyond design and development, I’m deeply passionate about storytelling, having spent years 
-                    writing reviews, blogs, scripts, and immersive narratives on platforms like Blogspot.
-                </p>
-            </section>
-
-            <section id="about-me">
-                <h3>Check out my resume to learn more about me!</h3>
-                <a href="another_images/Suzzal_G_Resume.pdf" target="_blank">
-                    <img src="another_images/resume.png" alt="Resume PDF">
-                </a>
-            </section>
-
-            <section id="projects">
-                <h3>My Portfolio</h3>
-                <p>Here’s a showcase of a few samples from my projects.</p> <br>
-                <div class="carousel">
-                    <button class="carousel-btn prev-btn">←</button>
-                    <div class="carousel-images">
-                        <a href="another_images/Sujal Ghimire Portfolio.pdf" target="_blank"><img src="another_images/port_pdf.jpg" alt="port_pdf"></a>
-                        <a href="another_images/Menu.jpg" target="_blank"><img src="another_images/Menu.jpg" alt="Menu"></a>
-                        <a href="another_images/Shoes.jpg" target="_blank"><img src="another_images/Shoes.jpg" alt="Shoes"></a>
-                        <a href="another_images/Glow.png" target="_blank"><img src="another_images/Glow.png" alt="Glow"></a>
-                        <a href="another_images/Reunion Nepali.jpg" target="_blank"><img src="another_images/Reunion Nepali.jpg" alt="ReunionNepali"></a>
-                        <a href="another_images/Detergent.png" target="_blank"><img src="another_images/Detergent.png" alt="Detergent"></a>
-                        <a href="another_images/Ducati.jpeg" target="_blank"><img src="another_images/Ducati.jpeg" alt="P"></a>
-                        <a href="another_images/Newspaper.pdf" target="_blank"><img src="another_images/Newspaper.png" alt="Newspaper"></a>
-                        <a href="another_images/JEWELLERY AD.jpg" target="_blank"><img src="another_images/JEWELLERY AD.jpg" alt="JEWELLERY"></a>
-                        <a href="another_images/Poster.png" target="_blank"><img src="another_images/Poster.png" alt="Poster"></a>
-                        <a href="another_images/Magazine Cover.jpg" target="_blank"><img src="another_images/Magazine Cover.jpg" alt="Magazine"></a>
-                        <a href="another_images/Infographics.png" target="_blank"><img src="another_images/Infographics.png" alt="Infographics"></a>
-                        <a href="another_images/Car.jpg" target="_blank"><img src="another_images/Car.jpg" alt="Car"></a>
-                        <a href="another_images/Washing machine ad.jpg" target="_blank"><img src="another_images/Washing machine ad.jpg" alt="Washing"></a>
-                        <a href="another_images/Reunion.png" target="_blank"><img src="another_images/Reunion.png" alt="Reunion"></a>
-                        <a href="another_images/Visiting Card.jpeg" target="_blank"><img src="another_images/Visiting Card.jpeg" alt="Visiting"></a>
-                        <a href="another_images/Burger.jpeg" target="_blank"><img src="another_images/Burger.jpeg" alt="Burger"></a>
-                        <a href="another_images/Dinner Coupon.jpg" target="_blank"><img src="another_images/Dinner Coupon.jpg" alt="Dinner"></a>
-                        <a href="another_images/Pulsar.jpg" target="_blank"><img src="another_images/Pulsar.jpg" alt="Pulsar"></a>
-                        <a href="another_images/Flyer.jpg" target="_blank"><img src="another_images/Flyer.jpg" alt="Flyer"></a>
-                        <a href="another_images/Trifold Brochure.pdf" target="_blank"><img src="another_images/Brochure.png" alt="Brochure"></a>
-                        <a href="another_images/Asuna-Dio.png" target="_blank"><img src="another_images/Asuna-Dio.png" alt="Asuna-Dio"></a>
-
-                    </div>
-                    <button class="carousel-btn next-btn">→</button>
-                </div>
-            </section>
-
-            <section id="skill">
-                <h3>Skills</h3>
-                <p>These are the skills I've honed over time, each one representing growth, learning, and dedication to my craft.</p> <br>
-                <ul>
-                    <li>
-                        <b>Graphic Design</b>: <p>My journey into graphic design began with a professional 3-month certification program at
-                        <a href="https://broadwayinfosys.com/" target="_blank">Broadway Infosys</a> (2023), where I was guided by industry experts. This immersive training provided me with comprehensive knowledge and practical expertise in areas such as logo creation, brochures, posters, typography, infographics, branding, book design, advertisements, newspapers, and event banners. I honed my skills in industry-standard tools like Adobe Photoshop, Illustrator, and InDesign.
-                        Trivia: While I had always nurtured a passion for design, self-learning from platforms like YouTube often left me uncertain about professional standards. Joining a reputable institute equipped me with the confidence and expertise to excel in the competitive design market. My training also included real-world projects, culminating in a certification that reflects my readiness to meet professional demands.
-                    </p>
-                    </li> <br>
-                    <li>
-                       <b>MERN Stack Development</b>: <p>I acquired proficiency in MERN Stack Development through an intensive 3-month course at
-                        <a href="https://broadwayinfosys.com/" target="_blank">Broadway Infosys</a> (2024). Under expert mentorship, I mastered MongoDB, ExpressJS, ReactJS, NodeJS, and supporting technologies such as JavaScript, HTML, CSS, Bootstrap, and Git. This training equipped me to develop dynamic web applications, encompassing both front-end and back-end development.
-                        The knowledge gained has seamlessly integrated into my academic and professional pursuits, enhancing my ability to design and develop responsive, scalable, and functional websites.</p>
-                    </li> <br>
-                    <li>
-                        <b>Content Writing and Storytelling</b>: <p>My enthusiasm for writing stems from an early interest in reading blogs, stories, and reviews online. Over the years, I have self-taught and refined my skills in creative and content writing. I’ve authored multiple stories, blogs, reviews, and even ventured into ghostwriting, scriptwriting, and editorial content creation.
-                            This passion for storytelling has allowed me to communicate ideas effectively, bringing both creativity and structure to every piece of writing I produce.</p>
-                     </li> <br>
-                    <li>
-                        <b>Academic Skills</b> <p> Throughout my educational journey, I have cultivated a strong foundation in both IT and management disciplines. My academic experience has enriched me with theoretical and practical knowledge in: <br>
-                        <ul>
-                        <li>Management & Business: Including finance, accounting, human resource management, and organizational behavior. </li>
-                        <li>Information Technology: Encompassing DBMS, operating systems, C programming, object-oriented programming with Java, Python, digital logic, artificial intelligence, web technologies (HTML, CSS, JavaScript, PHP), networking, and microprocessor architecture. </li>
-                        </ul>
-                    </p>
-                    </li>
-                </ul>
-            </section>
-
-            <section id="stories">
-                <h3>My Stories</h3>
-                <p>Here’s a glimpse into some of the stories I’ve crafted in the past.</p> <br>
-                <div class="carousel">
-                    <button class="carousel-btn prev-btn">←</button>
-                    <div class="carousel-images">
-                        <a href="https://littlefawn22.blogspot.com/2022/03/perepichka.html" target="_blank"><img src="blog_images/Perepichka.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/04/the-new-session.html" target="_blank"><img src="blog_images/shoe.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2023/02/the-stare.html" target="_blank"><img src="blog_images/Stare.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/05/yesim-homeless.html" target="_blank"><img src="blog_images/homeless.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/05/i-dont-know-why-but-i-love-it.html" target="_blank"><img src="blog_images/love.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/05/this-is-who-i-am.html" target="_blank"><img src="blog_images/mad.jpg" alt="P"></a>
-                        <a href="https://littlefawn22.blogspot.com/2023/02/new-year-without-new-resolution.html" target="_blank"><img src="blog_images/Sunflower.jpg"></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/08/who-stole-money.html" target="_blank"><img src="blog_images/Money.jpg" ></a>
-                        <a href=https://littlefawn22.blogspot.com/2022/07/a-narcissist.html target="_blank"><img src="blog_images/A Narcissist.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/09/just-simple-man.html" target="_blank"><img src="blog_images/faker.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/08/i-forget.html" target="_blank"><img src="blog_images/Forgot.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/07/what-if-i-was-one.html" target="_blank"><img src="blog_images/Was.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/06/a-drive-with-that-driver.html" target="_blank"><img src="blog_images/Drive.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/03/fausse-croyance-part-1.html" target="_blank"><img src="blog_images/fausse.jpg" ></a>
-                        <a href="https://littlefawn22.blogspot.com/2022/03/fausse-croyance-part-2.html" target="_blank"><img src="blog_images/Croyance.png" ></a>
-
-                    </div>
-                    <button class="carousel-btn next-btn">→</button>
-                </div>
-            </section>
-
-            <section id="education">
-                <h2>Education</h2> <br>
-                <ul>
-                    <li>
-                        <strong>SLC/SEE:</strong> Completed from <a href="https://amv.edu.np/" target="_blank">Shree Amar Singh Model Secondary School</a>, Pokhara (2019)
-                    </li>
-                    <li>
-                        <strong>+2:</strong> Completed from <a href="https://sec.goldengateintl.com/" target="_blank">Golden Gate International College</a> in Commerce/Management with Business Studies as the main subject (2021)
-                    </li>
-                    <li>
-                        <strong>Bachelor's:</strong> Currently pursuing a Bachelor’s degree in Information Management (BIM) at <a href="https://sdc.tu.edu.np/" target="_blank">Shanker Dev Campus</a>, Putalisadak, Kathmandu (2021-2026)
-                    </li>
-                </ul>
-            </section>
-            
-           
-            
-        </main>
+    <!-- Web Projects -->
+    <div class="work-block">
+      <div class="work-head">
+        <h3>Web Projects</h3>
+      </div>
+      <div class="grid thumbs single-center">
+        <a class="thumb" href="https://starlinkcenter.com.np" target="_blank">
+          <img src="another_images/starlink.jpeg" alt="Starlink Project" />
+        </a>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="navbar">
-        <div class="footer-icons">
-            <a href="mailto:suzzalghimire@gmail.com">
-                <img src="another_images/mail.png" alt="Email">
-            </a>
-            <a href="https://www.linkedin.com/in/suzzal-ghimire-3a664027b/" target="_blank">
-                <img src="another_images/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.instagram.com/suzzal_ghimire/" target="_blank">
-                <img src="another_images/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100015013352573" target="_blank">
-                <img src="another_images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://github.com/Suzzal26" target="_blank">
-                <img src="another_images/git.png" alt="GitHub">
-            </a>
-            <a href="https://wa.link/jf439a" target="_blank">
-                <img src="another_images/Phone.png" alt="Phone">
-            </a>
-        </div>
-    </footer>
+    <!-- Graphic Design preview -->
+    <div class="work-block work-graphic">
+      <div class="work-head">
+        <h3>Graphic Design</h3>
+        <a class="link-more" href="sub categories/graphic-design.html">See more →</a>
+      </div>
+      <div class="grid thumbs graphic-preview">
+        <!-- JS will shuffle and insert images here -->
+      </div>
+    </div>
 
-    <script src="index.js"></script>
+    <!-- Stories & Novels preview -->
+    <div class="work-block work-stories">
+      <div class="work-head">
+        <h3>Stories &amp; Novels</h3>
+        <a class="link-more" href="sub categories/stories-novels.html">See more →</a>
+      </div>
+      <div class="grid thumbs stories-slider">
+        <!-- Permanent Web Novel -->
+        <a class="thumb" href="https://www.honeyfeed.fm/novels/19064" target="_blank" rel="noopener">
+          <img src="Novel/Echoes of Dream.jpg" alt="Echoes of Dream novel" />
+        </a>
+        <!-- JS will insert random short stories here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Skills -->
+  <section id="skills" class="section section--skills" aria-label="Skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-lead">These are the skills I've honed over time, each representing growth, learning, and dedication to my craft.</p>
+
+      <article class="skill-block">
+        <h3>Graphic Design</h3>
+        <p>Completed a professional certification at Broadway Infosys (2023), specializing in Adobe Photoshop, Illustrator, and InDesign. Experienced in posters, branding, typography, brochures, infographics, and event banners.</p>
+      </article>
+
+      <article class="skill-block">
+        <h3>MERN Stack Development</h3>
+        <p>Trained at Broadway Infosys (2024) in MongoDB, Express.js, React.js, Node.js, plus JavaScript, HTML, CSS, Bootstrap, and Git. Skilled in building responsive full-stack applications.</p>
+      </article>
+
+      <article class="skill-block">
+        <h3>Content Writing & Storywriting</h3>
+        <p>Self-taught creative writer with experience in blogs, reviews, ghostwriting, and long-form stories. Focused on structure, creativity, and emotional impact in storytelling.</p>
+      </article>
+
+      <article class="skill-block">
+        <h3>Academic Skills</h3>
+        <ul class="bullets">
+          <li><strong>Management &amp; Business:</strong> Finance, accounting, HRM, organizational behavior.</li>
+          <li><strong>Information Technology:</strong> DBMS, operating systems, C, Java, Python, AI, networking, microprocessors, and web technologies.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+<!-- Education -->
+<section id="education" class="section section--education" aria-label="Education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <ul class="timeline">
+      <li>
+        <h4>
+          <a href="https://amv.edu.np" target="_blank" rel="noopener">
+            SLC/SEE — Shree Amar Singh Model Secondary School, Pokhara
+          </a>
+        </h4>
+        <p>Pokhara — 2019</p>
+      </li>
+      <li>
+        <h4>
+          <a href="https://college.goldengateintl.com/" target="_blank" rel="noopener">
+            +2 (Commerce/Management) — GoldenGate International College
+          </a>
+        </h4>
+        <p>Kathmandu — 2021</p>
+      </li>
+      <li>
+        <h4>
+          <a href="https://sdc.tu.edu.np" target="_blank" rel="noopener">
+            Bachelor’s in Information Management (BIM) — Shanker Dev Campus
+          </a>
+        </h4>
+        <p>Kathmandu (Tribhuvan University) — 2021–2026</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Experience -->
+<section id="experience" class="section section--experience" aria-label="Experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <ul class="timeline">
+      <li>
+        <h4>Graphic Design Intern</h4>
+        <p>
+          <strong>
+            <a href="https://foodmandu.com" target="_blank" rel="noopener">
+              Foodmandu
+            </a>
+          </strong> — Kathmandu | April 2025 – July 2025
+        </p>
+        <p>
+          Contributed to Foodmandu’s creative team by designing engaging visuals for digital campaigns,
+          seasonal promotions, and category-specific banners featured across web and social media platforms. 
+          Responsibilities included image manipulation, layout design, and the development of consistent 
+          brand-aligned assets. Supported cross-functional teams to ensure marketing materials enhanced 
+          user engagement and strengthened Foodmandu’s digital presence.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+  <!-- Certifications -->
+<section id="certifications" class="section section--certifications" aria-label="Certifications">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    
+    <!-- Certificate Cards -->
+    <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+      
+      <!-- Graphic Design -->
+      <a href="Certificates/Graphic Design.jpg" target="_blank" 
+         style="flex:1 1 300px; max-width:350px; background:#fff; border-radius:12px; 
+                box-shadow:0 4px 12px rgba(0,0,0,0.1); overflow:hidden; text-align:center; 
+                text-decoration:none; color:inherit;">
+        <img src="Certificates/Graphic Design.jpg" alt="Graphic Design Certificate" 
+             style="width:100%; height:auto; display:block;">
+        <div style="padding:15px;">
+          <h4 style="margin:0; font-size:18px;">Graphic Design Certification</h4>
+          <p style="margin:5px 0 0; color:#666;">Broadway Infosys — 2023</p>
+        </div>
+      </a>
+      
+      <!-- MERN Stack -->
+      <a href="Certificates/MERN Stack.jpg" target="_blank" 
+         style="flex:1 1 300px; max-width:350px; background:#fff; border-radius:12px; 
+                box-shadow:0 4px 12px rgba(0,0,0,0.1); overflow:hidden; text-align:center; 
+                text-decoration:none; color:inherit;">
+        <img src="Certificates/MERN Stack.jpg" alt="MERN Stack Certificate" 
+             style="width:100%; height:auto; display:block;">
+        <div style="padding:15px;">
+          <h4 style="margin:0; font-size:18px;">MERN Stack Development</h4>
+          <p style="margin:5px 0 0; color:#666;">Broadway Infosys — 2024</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="section section--contact" aria-label="Contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-ctas">
+        <a class="btn" href="mailto:suzzalghimire@gmail.com">Email Me</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/suzzal-ghimire-3a664027b/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="social-row">
+        <a href="mailto:suzzalghimire@gmail.com"><img src="another_images/mail.png" alt="Email icon" /></a>
+        <a href="https://www.linkedin.com/in/suzzal-ghimire-3a664027b/" target="_blank"><img src="another_images/linkedin.png" alt="LinkedIn icon" /></a>
+        <a href="https://www.instagram.com/suzzal_ghimire/" target="_blank"><img src="another_images/instagram.png" alt="Instagram icon" /></a>
+        <a href="https://www.facebook.com/profile.php?id=100015013352573" target="_blank"><img src="another_images/facebook.png" alt="Facebook icon" /></a>
+        <a href="https://github.com/Suzzal26" target="_blank"><img src="another_images/git.png" alt="GitHub icon" /></a>
+        <a href="https://wa.link/jf439a" target="_blank"><img src="another_images/Phone.png" alt="WhatsApp icon" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Suzzal Ghimire</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
 </body>
 </html>
